@@ -4,7 +4,7 @@ package maths_problems;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class _2_Factorial {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

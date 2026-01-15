@@ -3,7 +3,7 @@ package maths_problems;
 //FIBONACCI SERIES  (Print N terms)
 
 import java.util.Scanner;
-class FibonacciSeries {
+public  class _1_FibonacciSeries {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         

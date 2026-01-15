@@ -1,8 +1,11 @@
 package maths_problems;
 
+
+// FIND THE GIVEN NUMBER IS A PRIME OR NOT
+
 import java.util.Scanner;
 
-public class PrimeNumber {
+public class _3_PrimeNumber {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
