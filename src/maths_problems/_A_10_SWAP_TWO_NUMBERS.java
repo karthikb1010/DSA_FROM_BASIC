@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // SWAP TWO NUMBERS WITHOUT USING TEMP VARIABLE
 
-public class _A_SWAP_TWO_NUMBERS {
+public class _A_10_SWAP_TWO_NUMBERS {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
