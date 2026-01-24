@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //Seive of Eratosthones--- find all primes <= N
 
-public class Seive_Of_Eratosthenes {
+public class _C_12_Seive_Of_Eratosthenes {
 
 	public static void main(String[] args) {
 		
