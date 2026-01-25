@@ -28,7 +28,6 @@ public class _B_11_Power_Of_Two {
 		System.out.println("Number is a power of two ");
 		
 		sc.close();
-		
 
 	}
 

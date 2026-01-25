@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //Reverse Digits of a number  (123 = 321)
 
-public class Reverse_Digits {
+public class _D_13_Reverse_Digits {
 
 	public static void main(String[] args) {
 		
@@ -23,6 +23,7 @@ public class Reverse_Digits {
 		}
 		System.out.println("Reversal of a number is " + rev);
 
+		sc.close();
 	}
 
 }

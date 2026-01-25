@@ -35,7 +35,7 @@ public class _C_12_Seive_Of_Eratosthenes {
 			}
 		}
 		
-		
+		sc.close();
 
 	}
 
