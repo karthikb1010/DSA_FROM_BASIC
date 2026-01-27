@@ -1,5 +1,7 @@
 package maths_problems;
 
+// find the square root of a number
+
 import java.util.Scanner;
 
 public class _H_17_SquareRoot_Using_BinarySearch {
