@@ -1,4 +1,4 @@
-package maths_problems;
+package _1_maths_problems;
 
 // find the square root of a number
 

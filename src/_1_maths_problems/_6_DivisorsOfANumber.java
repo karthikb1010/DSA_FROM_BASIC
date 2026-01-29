@@ -1,4 +1,4 @@
-package maths_problems;
+package _1_maths_problems;
 
 
 //PRINT ALL DIVISORS OF A NUMBER

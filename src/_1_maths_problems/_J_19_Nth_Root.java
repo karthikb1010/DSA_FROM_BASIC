@@ -1,4 +1,4 @@
-package maths_problems;
+package _1_maths_problems;
 
 // Find Nth root of a number
 

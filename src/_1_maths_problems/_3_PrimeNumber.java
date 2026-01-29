@@ -1,4 +1,4 @@
-package maths_problems;
+package _1_maths_problems;
 
 
 // FIND THE GIVEN NUMBER IS A PRIME OR NOT
