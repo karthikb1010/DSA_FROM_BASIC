@@ -42,6 +42,8 @@ public class _C_3_Find_Missing_Number {
 		int missing  = expectedSum - actualSum ;
 		
 		System.out.println("The missing number is:" + missing);
-	}
+		
+		sc.close();
+		}
 
 }
