@@ -1,5 +1,13 @@
 package _2_arrays;
 
+/*
+You are given two arrays.
+
+Find the elements that appear in both arrays.
+
+(Intersection = common elements)
+
+*/
 import java.util.Arrays;
 import java.util.Scanner;
 
