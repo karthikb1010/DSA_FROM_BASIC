@@ -35,7 +35,7 @@ public class _I_9_Equilibrium_Index {
 		}
 		System.out.println("No Equilibrium index found");
 		
-		
+		sc.close();
 	}
 
 }
