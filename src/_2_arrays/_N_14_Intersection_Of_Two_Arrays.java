@@ -1,4 +1,4 @@
-package _2_arrays;
+package _2_Arrays;
 
 /*
 You are given two arrays.
