@@ -48,12 +48,12 @@ We move through s2 and try to match s1 characters in order.
  */
 import java.util.Scanner;
 
-public class _I_9_Check_Subsequence_Of_Other {
+public class _I_9_Check_Subsequence_Of_Other { 
 
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-
+		
 		System.out.println("Enter string1 :");
 		String s1 = sc.next();
 
@@ -62,7 +62,7 @@ public class _I_9_Check_Subsequence_Of_Other {
 
 		int i=0;
 		int j=0;
-
+ 
 		while(i < s1.length() && j < s2.length()) {
 			if(s1.charAt(i) == s2.charAt(j)) {
 				i++;
