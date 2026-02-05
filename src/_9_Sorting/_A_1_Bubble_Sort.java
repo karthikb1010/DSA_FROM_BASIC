@@ -83,14 +83,6 @@ public class _A_1_Bubble_Sort {
 			sc.close();
 		}
 
-
-
-
-
-
-
-
-
 	}
 
 }
