@@ -13,7 +13,7 @@ We use:
 This reduces time complexity.
 
 
-🧠 Simple example 
+🧠 Simple example idea
 
 Array:
 
