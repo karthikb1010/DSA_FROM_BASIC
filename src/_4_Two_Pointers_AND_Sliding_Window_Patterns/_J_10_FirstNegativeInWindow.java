@@ -180,7 +180,7 @@ Correct first negative now = -7
 
 */
 import java.util.*;
-public class FirstNegativeInWindow {
+public class _J_10_FirstNegativeInWindow {
 	    public static void main(String[] args) {
 
 	        int[] arr = {12, -1, -7, 8, -15, 30, 16, 28};
