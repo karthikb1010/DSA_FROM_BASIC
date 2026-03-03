@@ -183,7 +183,7 @@ Peek → O(1)
  
  */
 
-public class MyStack {
+public class _A_1_MyStack {
 
 	public static void main(String[] args) {
 

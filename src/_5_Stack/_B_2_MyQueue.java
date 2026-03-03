@@ -166,6 +166,6 @@ Peek → O(1)
 
 */
 
-public class MyQueue {
-
+public class _B_2_MyQueue {
+	
 }
