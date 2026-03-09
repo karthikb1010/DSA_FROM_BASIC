@@ -383,6 +383,6 @@ If you want, next I can also explain **the biggest problem of this queue impleme
 
 */
 
-public class Queue {
+public class QueueArray {
 
 }
