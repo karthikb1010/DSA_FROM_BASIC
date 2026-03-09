@@ -333,9 +333,7 @@ What will be removed?
 
 Because queue always removes the **first inserted element**.
 
----
-
-If you want, I can also show you the **🔥 optimized version used in interviews (O(1) dequeue)** which is **much better and asked in placements**.
+-
 
 
 */
