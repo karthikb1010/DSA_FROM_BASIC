@@ -320,7 +320,7 @@ gives **FIFO behaviour**.
 
 After operations:
 
-```
+
 enqueue(5)
 enqueue(10)
 enqueue(15)
