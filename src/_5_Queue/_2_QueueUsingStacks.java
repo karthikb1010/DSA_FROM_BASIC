@@ -338,6 +338,6 @@ Because queue always removes the **first inserted element**.
 
 */
 
-public class QueueUsingStacks {
+public class _2_QueueUsingStacks {
 
 }
