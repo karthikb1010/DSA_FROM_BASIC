@@ -2,7 +2,7 @@ package _5_Queue;
 import java.util.*;
 
 /*
- * explanation
+
 
 LRU Cache (HashMap + Doubly Linked List with Dummy Nodes)
 import java.util.*;
