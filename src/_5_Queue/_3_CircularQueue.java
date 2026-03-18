@@ -2,8 +2,7 @@ package _5_Queue;
 
 /*
 
-Circular Queue using Array (Java) — Notes
-1️⃣ Concept
+Circular Queue using Array (Java) 
 
 A Circular Queue is a queue in which the last position is connected to the first position.
 
