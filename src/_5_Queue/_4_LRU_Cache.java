@@ -26,6 +26,26 @@ Final cache:
 
 1, 3, 4
 
+
+Operations in LRU Cache
+1. get(key)
+Returns the value of the key if it exists.
+Moves the key to most recently used position.
+2. put(key, value)
+Inserts or updates a value.
+If cache is full → remove least recently used item.
+Data Structures Used
+
+To achieve O(1) time complexity, LRU cache uses:
+
+Hash Map
+Stores key → node reference
+Enables fast lookup
+Doubly Linked List
+Maintains order of usage
+Head → Most recently used
+Tail → Least recently used
+
 */
 
 
