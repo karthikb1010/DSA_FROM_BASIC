@@ -3,6 +3,35 @@ import java.util.*;
 
 /*
 
+LRU Cache (Least Recently Used Cache)
+
+Definition:
+LRU Cache is a cache replacement algorithm that removes the least recently used item when the cache becomes full and a new item needs to be inserted.
+
+Key Idea
+
+The element that has not been used for the longest time is removed first.
+
+Example:
+
+Cache size = 3
+
+Access order:
+1, 2, 3 → cache full
+
+Access 1 → recently used
+Add 4 → remove 2 (least recently used)
+
+Final cache:
+
+1, 3, 4
+
+*/
+
+
+/*
+
+
 
 LRU Cache (HashMap + Doubly Linked List with Dummy Nodes)
 import java.util.*;
