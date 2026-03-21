@@ -46,6 +46,11 @@ Maintains order of usage
 Head → Most recently used
 Tail → Least recently used
 
+Time Complexity
+Operation	Complexity
+get()	O(1)
+put()	O(1)
+
 */
 
 
