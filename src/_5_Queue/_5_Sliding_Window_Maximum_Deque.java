@@ -38,8 +38,6 @@ Deque rules:
 */
 
 
-
-
 public class _5_Sliding_Window_Maximum_Deque {
 
 	public static void main(String[] args) {
