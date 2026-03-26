@@ -1,6 +1,6 @@
 package _6_LinkedList;
 
-
+//about reversing a linked list --refer also dsa java telugu
 public class _1_A_Reverse_List {
 	
 	
