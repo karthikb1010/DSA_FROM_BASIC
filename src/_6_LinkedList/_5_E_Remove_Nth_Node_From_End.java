@@ -64,3 +64,149 @@ static void printList(Node head) {
 	}
 
 }
+
+
+/*
+
+Got it 👍 you want **pure concept (no code)** for quick revision. Here’s the clean version 👇
+
+---
+
+# 🧠 Remove Nth Node From End — Concept Only
+
+---
+
+## 📌 Core Idea
+
+We don’t count length separately.
+Instead, we use **two pointers** to locate the node in **one pass**.
+
+---
+
+## 🔑 Main Concept (Two Pointer Gap)
+
+👉 Maintain a gap of **n nodes** between two pointers:
+
+* `fast` pointer goes ahead
+* `slow` pointer follows
+
+---
+
+## ⚙️ How it Works
+
+### 1️⃣ Start both at beginning (or dummy before head)
+
+* Both `slow` and `fast` start at same position
+
+---
+
+### 2️⃣ Move fast pointer n steps ahead
+
+👉 Now:
+
+* Distance between `slow` and `fast` = **n nodes**
+
+---
+
+### 3️⃣ Move both together
+
+* Move `slow` → 1 step
+* Move `fast` → 1 step
+
+👉 Keep moving until:
+
+* `fast` reaches the **last node**
+
+---
+
+### 4️⃣ Key Observation
+
+At this moment:
+
+👉 `slow` is just **before the node to delete**
+
+---
+
+### 5️⃣ Remove node
+
+👉 Skip the next node of `slow`
+
+This effectively deletes the **Nth node from the end**
+
+---
+
+## 🎯 Why This Works
+
+Because:
+
+* `fast` started **n steps ahead**
+* When `fast` reaches end
+* `slow` is exactly at **(n+1)th node from end**
+
+---
+
+## ⚠️ Important Insight (Dummy Node)
+
+👉 Needed when deleting the **first node (head)**
+
+Example:
+
+```
+1 → 2 → 3, n = 3
+```
+
+* We must delete `1`
+* Without extra node → difficult to handle
+* With dummy → easy to remove head
+
+---
+
+## 🧠 Visualization (Quick)
+
+```
+Initial gap:
+
+slow → dummy
+fast → n steps ahead
+
+Then:
+
+slow → moves step by step
+fast → reaches end
+
+Final:
+
+slow → just before target
+```
+
+---
+
+## ⏱ Efficiency
+
+* **Time:** O(n) → only one traversal
+* **Space:** O(1) → no extra memory
+
+---
+
+## 🔥 One-Line Memory Trick
+
+👉
+**“Create gap of n → move together → slow reaches before target → delete next”**
+
+---
+
+## 🧩 Pattern Recognition
+
+This is a classic **Slow–Fast Pointer pattern**
+
+Used in:
+
+* Find middle node
+* Detect cycle
+* Find cycle start
+* Palindrome linked list
+* Remove Nth node
+
+
+*/
+
