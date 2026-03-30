@@ -1,30 +1,30 @@
 package _6_LinkedList;
 
-public class _8_Intersection_Of_Lists {
-	
+public class _8_H_Intersection_Of_Lists {
+
 	static Node intersection(Node head1 , Node head2) {
-		
+
 		Node p1 = head1;
 		Node p2 = head2;
-		
+
 		while( p1 != p2) {
-		if(p1 == null) {
-			p1 = head2;
-		}else {
-			p1 = p1.next;
-		}
-		
-		if(p2 == null) {
-			p2 = head1;
-		}else {
-			p2 = p2.next;
-		}
+			if(p1 == null) {
+				p1 = head2;
+			}else {
+				p1 = p1.next;
+			}
+
+			if(p2 == null) {
+				p2 = head1;
+			}else {
+				p2 = p2.next;
+			}
 		}
 		return p1;
 	}
 
 	public static void main(String[] args) {
-		
+
 		Node n1 = new Node(1);
 		Node n2 = new Node(2);
 		Node n3 = new Node(3);
@@ -54,13 +54,13 @@ public class _8_Intersection_Of_Lists {
 		// Heads
 		Node head1 = n1;
 		Node head2 = n6;
-		
+
 		Node ans = intersection(head1, head2);
 
 		if(ans != null){
-		    System.out.println("Intersection at node: " + ans.data);
+			System.out.println("Intersection at node: " + ans.data);
 		}else{
-		    System.out.println("No intersection");
+			System.out.println("No intersection");
 		}
 
 	}
@@ -100,4 +100,4 @@ p1 == p2
 Return:
 Intersection node OR null
 
-*/
+ */
