@@ -6,7 +6,9 @@ class Node{
 	
 	int data;
 	Node next;
+	Node prev;
 	Node random;
+	Node child;
 	
 	Node(int data){
 		this.data=data;
