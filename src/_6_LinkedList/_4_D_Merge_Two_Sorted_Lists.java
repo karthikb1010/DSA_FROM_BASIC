@@ -66,3 +66,79 @@ static void printList(Node head) {
 	}
 
 }
+
+/*
+
+🔹 Problem Understanding
+You are given two sorted singly linked lists
+Each list is sorted in ascending order
+
+👉 Goal:
+Merge them into one sorted linked list
+
+🔹 Key Idea (Core Logic)
+
+👉 Compare nodes from both lists and always pick the smaller one
+
+Build a new list step-by-step
+Maintain sorted order
+🔹 Role of Dummy Node
+
+👉 A dummy node is used to simplify logic
+
+Acts as starting point of merged list
+Avoids handling special case for head
+
+✔ Final answer = dummy.next
+
+🔹 Step-by-Step Logic
+1. Initialize
+Create dummy node
+Use tail pointer to build result
+2. Traverse both lists
+
+While both lists are not null:
+
+Compare list1.data and list2.data
+Attach smaller node to tail.next
+Move that list forward
+Move tail forward
+3. Attach remaining nodes
+
+After loop:
+
+Only one list may have elements left
+
+👉 Directly attach remaining part:
+
+No need to compare further (already sorted)
+4. Return result
+Return dummy.next
+🔹 Visual Understanding
+
+Before:
+
+List1: 1 → 3 → 5  
+List2: 2 → 4 → 6
+
+After:
+
+Merged: 1 → 2 → 3 → 4 → 5 → 6
+🔹 Important Points
+
+✔ Always move tail forward after attaching node
+✔ Only compare while both lists are non-null
+✔ Remaining list can be attached directly
+✔ No new nodes are created → reuse existing nodes
+
+🔹 Time Complexity
+O(N + M)
+👉 N = length of list1, M = length of list2
+🔹 Space Complexity
+O(1)
+👉 No extra space (in-place merge)
+🔹 Type of Approach
+Iterative
+Two-pointer technique
+
+*/
