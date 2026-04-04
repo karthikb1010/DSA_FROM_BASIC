@@ -86,3 +86,85 @@ public class _A_1_Bubble_Sort {
 	}
 
 }
+
+/*
+
+🫧 Bubble Sort — Quick Revision Notes
+🔹 What is Bubble Sort?
+
+Bubble Sort is a simple comparison-based sorting algorithm where:
+
+👉 Adjacent elements are compared
+👉 Swapped if they are in the wrong order
+👉 This process repeats until the array is sorted
+
+🔹 Key Idea (Very Important)
+
+👉 Largest element moves to the end in each pass
+👉 Just like bubbles rise to the top 🫧
+
+🔹 Working Principle
+
+For an array of size n:
+
+Total passes = n - 1
+In each pass:
+Compare adjacent elements
+Swap if needed
+After each pass:
+The last element is fixed (sorted)
+🔹 Algorithm Steps
+Start from index 0
+Compare arr[j] and arr[j+1]
+Swap if arr[j] > arr[j+1]
+Repeat till end of array
+Reduce comparisons in next pass (n-1-i)
+Continue until all passes complete
+🔹 Code Logic (Your Code Understanding)
+Outer Loop
+for(int i = 0; i < n-1; i++)
+
+👉 Controls number of passes
+
+Inner Loop
+for(int j = 0; j < n-1-i; j++)
+
+👉 Controls comparisons per pass
+👉 -i because last elements are already sorted
+
+Swap Condition
+if(arr[j] > arr[j+1])
+
+👉 Swap if elements are in wrong order
+
+🔹 Time Complexity
+Case	Time Complexity
+Best Case	O(n) (if optimized)
+Average	O(n²)
+Worst Case	O(n²)
+
+👉 Your code is not optimized, so:
+➡️ Best case is also O(n²)
+
+🔹 Space Complexity
+
+👉 O(1) (in-place sorting, no extra space)
+
+🔹 Stability
+
+👉 ✅ Stable algorithm
+(Same elements keep their relative order)
+
+🔹 Advantages
+
+✔ Easy to understand
+✔ Easy to implement
+✔ No extra memory needed
+
+🔹 Disadvantages
+
+❌ Very slow for large data
+❌ Not used in real-world big applications
+*/
+
+
