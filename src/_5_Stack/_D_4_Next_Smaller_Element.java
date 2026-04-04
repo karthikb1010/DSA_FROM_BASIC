@@ -188,3 +188,194 @@ public class _D_4_Next_Smaller_Element {
 	}
 
 }
+
+/*
+
+Here’s your **clean revision theory** for **Next Smaller Element (Right Side using Stack)** — simple + exam-ready 👇
+
+---
+
+# 📚 Next Smaller Element (Right Side) — Revision Notes
+
+## 🔹 1. Problem Definition
+
+👉 Given an array, for each element find:
+
+➡️ **First smaller element on its right side**
+
+If no smaller element exists → return **-1**
+
+---
+
+### 🔸 Example
+
+```
+arr = [4, 8, 5, 2, 25]
+
+Output:
+[2, 5, 2, -1, -1]
+```
+
+---
+
+## 🔹 2. Key Idea
+
+👉 We only look **to the right side**
+👉 We need the **first smaller element (nearest)**
+
+---
+
+## 🔹 3. Brute Force Approach
+
+### ✔ Idea:
+
+For each element:
+
+* Check all elements to its right
+* Stop when a smaller element is found
+
+---
+
+### ✔ Time Complexity:
+
+👉 **O(n²)**
+
+❌ Not efficient for large inputs
+
+---
+
+## 🔹 4. Optimized Approach (Stack)
+
+👉 Use a **Monotonic Increasing Stack**
+
+---
+
+## 🔹 5. Why Stack?
+
+Stack helps to:
+
+* Keep track of **possible smaller elements**
+* Remove useless elements quickly
+
+---
+
+## 🔹 6. Important Trick ⭐
+
+👉 Traverse **RIGHT → LEFT**
+
+Because:
+
+* We need elements on the **right side**
+* Stack already contains future elements
+
+---
+
+## 🔹 7. Algorithm Steps
+
+For each element (right → left):
+
+### Step 1:
+
+```java
+while(!stack.isEmpty() && stack.peek() >= arr[i])
+```
+
+👉 Remove all elements **greater than or equal**
+👉 Because they can never be the answer
+
+---
+
+### Step 2:
+
+```java
+if(stack.isEmpty())
+    result[i] = -1;
+else
+    result[i] = stack.peek();
+```
+
+👉 If stack empty → no smaller element
+👉 Else → top is answer
+
+---
+
+### Step 3:
+
+```java
+stack.push(arr[i]);
+```
+
+👉 Push current element for future use
+
+---
+
+## 🔹 8. Time & Space Complexity
+
+| Type  | Complexity |
+| ----- | ---------- |
+| Time  | O(n)       |
+| Space | O(n)       |
+
+👉 Each element is pushed & popped **only once**
+
+---
+
+## 🔹 9. Stack Behavior (Very Important)
+
+👉 Stack always maintains:
+
+➡️ **Increasing order (bottom → top)**
+
+Example stack:
+
+```
+[2, 5, 8]
+```
+
+---
+
+## 🔹 10. Why We Remove `>=` Elements?
+
+👉 Because:
+
+* We need **strictly smaller**
+* Larger or equal elements are useless
+
+---
+
+## 🔹 11. Key Observations ⚡
+
+* Traverse from **right to left**
+* Stack stores **valid smaller candidates**
+* Top of stack = **nearest smaller element**
+* If empty → answer is **-1**
+
+---
+
+## 🔹 12. One-Line Summary
+
+👉 **Use a stack and traverse from right to left, removing larger elements to find the next smaller element efficiently in O(n).**
+
+---
+
+## 🔹 13. Interview/Viva Points 🎯
+
+* Type: **Monotonic Stack Problem**
+* Direction matters (**right → left**)
+* Similar problems:
+
+  * Next Greater Element
+  * Previous Smaller Element
+  * Stock Span
+
+---
+
+If you want next step, I can give:
+✅ Comparison: Next Greater vs Smaller (very important)
+✅ Pattern recognition (how to identify stack problems instantly)
+✅ Dry run table format for exams
+
+Just tell 👍
+
+
+*/
