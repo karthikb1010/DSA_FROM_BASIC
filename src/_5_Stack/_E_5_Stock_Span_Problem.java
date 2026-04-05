@@ -342,3 +342,120 @@ public class _E_5_Stock_Span_Problem {
 	}
 
 }
+
+
+/*
+
+🔴 Stock Span Problem — Quick Revision Notes
+1️⃣ Core Idea
+
+👉 For each day, find how many consecutive previous days (including today)
+have stock price ≤ current day price
+
+2️⃣ What You Actually Calculate
+
+For every index i:
+
+👉 Count how far you can go left until you find a greater price
+
+3️⃣ Key Observation
+
+We are looking for:
+
+👉 Nearest Greater Element to the Left (NGL)
+
+Span depends on:
+
+👉 Distance between current index and that greater element
+
+4️⃣ Why Brute Force is Bad
+For each element → check all previous elements
+Worst case:
+
+👉 Increasing array → compare with all previous
+
+⏱ Time Complexity: O(n²)
+
+5️⃣ Stack Optimization (Main Idea)
+
+We use a stack to store indices of elements.
+
+🔥 Stack Property
+
+👉 Stack maintains decreasing order of prices
+
+6️⃣ Important Rule
+
+While:
+
+👉 Top element price ≤ current price
+👉 Remove it (pop)
+
+❓ Why?
+
+Because:
+
+👉 That element cannot block span anymore
+👉 Current price dominates it
+
+7️⃣ Span Formula (VERY IMPORTANT)
+
+After popping:
+
+Case 1: Stack is Empty
+
+👉 No greater element on left
+👉 Span = i + 1
+
+Case 2: Stack NOT Empty
+
+👉 Top is nearest greater element
+
+👉 Span = i - stack.peek()
+
+8️⃣ Why Store Indices (Not Values)?
+
+Because:
+
+👉 We need distance (i - index)
+
+If we store values → cannot calculate span properly
+
+9️⃣ Pattern Recognition (Interview Important)
+
+Stock Span belongs to:
+
+👉 Monotonic Stack Problems
+
+Similar problems:
+
+Next Greater Element
+Previous Greater Element
+Histogram Largest Rectangle
+Daily Temperatures
+🔟 Time Complexity
+
+👉 Each element is:
+
+Pushed once
+Popped once
+
+⏱ Total = O(n)
+
+1️⃣1️⃣ Space Complexity
+
+👉 Stack stores indices
+
+📦 Space = O(n) (worst case)
+
+1️⃣2️⃣ Intuition in One Line
+
+👉 "Remove all smaller elements on left,
+then measure distance to the first greater element."
+
+1️⃣3️⃣ Edge Cases
+Strictly increasing → span grows (1,2,3,4...)
+Strictly decreasing → span always 1
+All equal → span keeps increasing
+
+*/
