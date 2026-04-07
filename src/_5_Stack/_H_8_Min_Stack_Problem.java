@@ -1,6 +1,43 @@
 package _5_Stack;
 
 import java.util.*;
+
+class _H_8_Min_Stack_Problem {
+
+	     Stack<Integer> stack = new Stack<>();
+	     Stack<Integer> minStack = new Stack<>();
+
+	     public void push(int x){
+
+	         stack.push(x);
+
+	         if(minStack.isEmpty() || x <= minStack.peek()){
+	             minStack.push(x);
+	         }
+	     }
+
+	     public void pop(){
+
+	         int removed = stack.pop();
+
+	         if(removed == minStack.peek()){
+	             minStack.pop();
+	         }
+	     }
+
+	     public int top(){
+	         return stack.peek();
+	     }
+
+	     public int getMin(){
+	         return minStack.peek();
+	     }
+	 }
+
+
+
+
+
 /*
 
 1️⃣ Problem
@@ -210,35 +247,3 @@ getMin → O(1)
 
 */
 
-
-class _H_8_Min_Stack_Problem {
-
-	     Stack<Integer> stack = new Stack<>();
-	     Stack<Integer> minStack = new Stack<>();
-
-	     public void push(int x){
-
-	         stack.push(x);
-
-	         if(minStack.isEmpty() || x <= minStack.peek()){
-	             minStack.push(x);
-	         }
-	     }
-
-	     public void pop(){
-
-	         int removed = stack.pop();
-
-	         if(removed == minStack.peek()){
-	             minStack.pop();
-	         }
-	     }
-
-	     public int top(){
-	         return stack.peek();
-	     }
-
-	     public int getMin(){
-	         return minStack.peek();
-	     }
-	 }
