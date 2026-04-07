@@ -40,7 +40,6 @@ class _H_8_Min_Stack_Problem {
 
 /*
 
-1️⃣ Problem
 
 We need a stack that supports:
 
