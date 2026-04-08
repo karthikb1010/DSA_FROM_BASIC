@@ -1,5 +1,16 @@
 package _5_Stack;
 
+public class _A_1_MyStack {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}
+
+
+
 /*
 
 
@@ -182,12 +193,3 @@ Pop  → O(1)
 Peek → O(1)
  
  */
-
-public class _A_1_MyStack {
-
-	public static void main(String[] args) {
-
-
-	}
-
-}

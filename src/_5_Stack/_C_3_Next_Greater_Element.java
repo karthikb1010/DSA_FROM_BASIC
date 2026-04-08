@@ -1,6 +1,40 @@
 package _5_Stack;
 
 import java.util.Stack;
+public class _C_3_Next_Greater_Element {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {4,5,2,25};
+		int n = arr.length;
+		
+		int[] result = new int[n];
+
+		Stack<Integer> stack = new Stack<>();
+		
+		for(int i = n-1 ;i >= 0; i--) {
+		while(!stack.isEmpty() && stack.peek() <= arr[i]) {
+		
+			stack.pop();
+		}
+		
+		
+		if(stack.isEmpty()) {
+			result[i] = -1;
+		}else {
+			result[i] = stack.peek();
+		}
+		
+		stack.add(arr[i]);
+		}
+		
+		for(int x : result) {
+			System.out.print(x + " ");
+		}
+	}
+
+}
+
 /*
 
 🔴 3️⃣ NEXT GREATER ELEMENT (NGE) 🔴
@@ -290,36 +324,3 @@ Time complexity = O(n).
 
 */
 
-public class _C_3_Next_Greater_Element {
-
-	public static void main(String[] args) {
-		
-		int[] arr = {4,5,2,25};
-		int n = arr.length;
-		
-		int[] result = new int[n];
-
-		Stack<Integer> stack = new Stack<>();
-		
-		for(int i = n-1 ;i >= 0; i--) {
-		while(!stack.isEmpty() && stack.peek() <= arr[i]) {
-		
-			stack.pop();
-		}
-		
-		
-		if(stack.isEmpty()) {
-			result[i] = -1;
-		}else {
-			result[i] = stack.peek();
-		}
-		
-		stack.add(arr[i]);
-		}
-		
-		for(int x : result) {
-			System.out.print(x + " ");
-		}
-	}
-
-}

@@ -1,4 +1,9 @@
 package _5_Stack;
+public class _B_2_MyQueue {
+	
+}
+
+
 
 /*
 
@@ -166,6 +171,3 @@ Peek → O(1)
 
 */
 
-public class _B_2_MyQueue {
-	
-}
