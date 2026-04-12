@@ -4,30 +4,6 @@ import java.util.Scanner;
 
 
 
-/*
-You are given multiple strings.
-
-You must find the longest starting part (prefix) that is common in all strings.
-
-Example 1:
-["flower", "flow", "flight"]
-
-Common prefix:
-"fl"
-
-
-🧪 Example 2:
-["dog", "racecar", "car"]
-Common prefix:
-""   (nothing common)
-
-🧠 BASIC IDEA (VERY SIMPLE)
-
-👉 Take the first string as reference
-👉 Compare its characters with same position in other strings
-👉 Stop when mismatch happens
-
-*/
 public class _G_7_Longest_Common_Prefix {
 
 	public static void main(String[] args) {
@@ -62,3 +38,29 @@ public class _G_7_Longest_Common_Prefix {
 	}
 
 }
+
+
+/*
+You are given multiple strings.
+
+You must find the longest starting part (prefix) that is common in all strings.
+
+Example 1:
+["flower", "flow", "flight"]
+
+Common prefix:
+"fl"
+
+
+🧪 Example 2:
+["dog", "racecar", "car"]
+Common prefix:
+""   (nothing common)
+
+🧠 BASIC IDEA (VERY SIMPLE)
+
+👉 Take the first string as reference
+👉 Compare its characters with same position in other strings
+👉 Stop when mismatch happens
+
+*/
