@@ -74,3 +74,69 @@ sc.close();
 	}
 
 }
+
+
+/*
+
+📘 Remove Duplicates from String – Theory Notes
+📌 Problem Definition
+
+Given a string, remove all duplicate characters and keep only the first occurrence of each character.
+
+👉 The order of characters must remain the same as the original string.
+
+🎯 Objective
+Eliminate repeated characters
+Preserve original sequence
+Return a string with unique characters
+🧠 Core Idea
+
+We scan the string character by character:
+
+If the character appears for the first time → keep it
+If it has appeared before → skip it
+📦 Concept Used: HashSet
+What is a HashSet?
+
+A HashSet is a collection that:
+
+✅ Stores only unique elements
+❌ Does not allow duplicates
+⚡ Provides fast lookup (O(1))
+⚙️ Working Principle
+Start with an empty result
+Create a HashSet to track seen characters
+Traverse the string:
+For each character:
+Check if it exists in the set
+If not:
+Add it to the set
+Add it to the result
+If yes:
+Ignore it
+Final result contains only unique characters
+
+
+⏱️ Time Complexity
+O(n) → We traverse the string once
+💾 Space Complexity
+O(n) → In worst case, all characters are unique
+
+
+⚠️ Important Points
+Order is preserved because we process string sequentially
+HashSet ensures duplicates are automatically ignored
+Works for:
+lowercase letters
+uppercase letters
+digits
+symbols
+🧩 Key Insight
+
+👉 The combination of iteration + HashSet gives:
+
+Efficient duplicate removal
+Simple logic
+Optimal performance
+*/
+ 
