@@ -43,3 +43,41 @@ public class _M_13_Valid_Parenthesis {
 	}
 
 }
+
+
+/*
+
+📌 Problem Summary
+
+Given a string containing:
+
+(  )  {  }  [  ]
+
+👉 Check if:
+
+Every opening bracket has a matching closing bracket
+Order is correct
+Proper nesting is followed
+🧠 Core Idea (IMPORTANT)
+
+👉 Use Stack (LIFO)
+
+Opening bracket → push
+Closing bracket → pop & match
+
+💡 Reason:
+
+Last opened bracket must be closed first
+
+⚙️ Algorithm Steps
+Create empty stack
+Traverse string
+If opening bracket → push
+If closing bracket:
+If stack empty → ❌ invalid
+Pop and check match
+After loop:
+Stack empty → ✅ valid
+
+*/
+ */
