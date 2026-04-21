@@ -80,4 +80,4 @@ After loop:
 Stack empty → ✅ valid
 
 */
- */
+ 
